@@ -1,6 +1,17 @@
 /**
- * ...
  * @author Landaes
+ * se usa así:
+ var d:DragNDrop = new DragNDrop();
+ d.crea(	d:DragNDrop, 		// se llama a sí mismo
+		preguntas:Array, 	// contiene movieClips
+		respuestas:Array,	// contiene movieClips
+		win:Array,		// contiene movieClips
+		lose:Array,		// contiene movieClips
+		feedbackFinal:Array,	// contiene movieClips
+		callback:Function,	// función de feedback positivo (cuando aprietas el botón del final, cuando ganaste)
+		callbackMal:Function,	// función de feedback negativo (cuando aprietas el botón del final, cuando ya agotas el máximo de repeticiones)
+		maxRepeticiones:Number	// cantida de veces que puedes hacer drag and drop
+	);
  */
 import com.greensock.*;
 import com.greensock.easing.*;
